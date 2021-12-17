@@ -7,7 +7,7 @@ import LinkBody from "./components/LinkBody";
 function App() {
 
   return (
-    <div className="app">
+    <div className="app flex flex-col justify-center items-center">
       <div className="app-wrapper">
         <Profile />
         <LinkBody />
