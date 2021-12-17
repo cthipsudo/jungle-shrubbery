@@ -55,7 +55,83 @@
 #link-body {
   border-top: solid #fff 2px;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #78BBBF;
   background-image: url('./images/transparent-flowers.png');
+}
+#link-body ul {
+  width: 100%;
+  height: auto;
+}
+#link-body ul li {
+  background-color: #78BBBF;
+  width: 100%;
+}
+#link-body button {
+  padding: 20px 0;
+  border: solid 2px #fff;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-image:   linear-gradient(to right, #fff 100%, #fff 100%),
+                      linear-gradient(to bottom, #fff 100%, #fff 100%),
+                      linear-gradient(to right, #fff 100%, #fff 100%),
+                      linear-gradient(to bottom, #fff 100%, #fff 100%);
+  background-size:    100% 3px,
+                      3px 100%,
+                      100% 3px,
+                      3px 100%;
+  background-position:    0 0,
+                          100% 0,
+                          100% 100%,
+                          0 100%;
+  animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+  animation-play-state: paused;
+}
+#link-body button:hover {
+  border: none;
+  animation-play-state: running;
+}
+
+/* Media Queries */
+@media all and (min-width: 768px) {
+  .app-wrapper {
+    border: solid 2px #fff;
+  }
+}
+
+/* Animations */
+
+@keyframes bg {
+  0% {
+      background-size:    0 3px,
+                          3px 0,
+                          0 3px,
+                          3px 0;
+  }
+  25% {
+      background-size:    100% 3px,
+                          3px 0,
+                          0 3px,
+                          3px 0;
+  }
+  50% {
+      background-size:    100% 3px,
+                          3px 100%,
+                          0 3px,
+                          3px 0;
+  }
+  75% {
+      background-size:    100% 3px,
+                          3px 100%,
+                          100% 3px,
+                          3px 0;
+  }
+  100% {
+      background-size:    100% 3px,
+                          3px 100%,
+                          100% 3px,
+                          3px 100%;
+  }
 }

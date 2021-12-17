@@ -1,7 +1,15 @@
 import React from "react";
 
-const Link = () => {
-
+function Link({ link, text }) {
+  return (
+    <li className="text-white">
+      <button>
+        <a target="_blank" href={link}>
+          {text}
+        </a>
+      </button>
+    </li>
+  );
 }
 
 export default Link;

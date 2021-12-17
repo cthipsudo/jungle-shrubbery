@@ -5,6 +5,7 @@ import Profile from "./components/Profile";
 import LinkBody from "./components/LinkBody";
 
 function App() {
+
   return (
     <div className="app">
       <div className="app-wrapper">
