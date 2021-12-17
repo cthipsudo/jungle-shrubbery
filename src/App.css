@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+
+#profile {
+  background: url('./img/banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#profile img {
+  border-radius: 50%;
+}
+
+#link-body {
+  border-top: solid #fff 2px;
+  width: 100%;
+  height: 100vh;
+  background-color: #78BBBF;
+}

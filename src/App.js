@@ -1,9 +1,15 @@
 import './App.css';
 
+
+// Components
+import Profile from './components/Profile';
+import LinkBody from './components/LinkBody';
+
 function App() {
   return (
-    <div className="App text-3xl font-bold underline">
-      <h1>Hello React Starter</h1>
+    <div className="app">
+      <Profile/>
+      <LinkBody/>
     </div>
   );
 }
