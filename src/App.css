@@ -72,7 +72,6 @@ html {
 #link-body button:hover {
   border: none;
   animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
-
   background-color: #6bafb2;
 }
 
@@ -104,6 +103,9 @@ html {
       rgba(113, 173, 176, 1) 0%,
       rgba(120, 187, 191, 1) 100%
     );
+    /* background-image: url('./images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
   }
   .app-wrapper {
     max-width: 768px;
