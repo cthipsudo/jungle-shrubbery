@@ -43,7 +43,6 @@ html {
 }
 #link-body button {
   padding: 20px 0;
-  border: solid 2px #fff;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   transition: all 0.5s ease-out;
   width: 100%;
@@ -61,12 +60,12 @@ html {
                           100% 0,
                           100% 100%,
                           0 100%;
-  animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
-  animation-play-state: paused;
+  
 }
 #link-body button:hover {
   border: none;
-  animation-play-state: running;
+  animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+  
   background-color: #6bafb2;
 }
 
