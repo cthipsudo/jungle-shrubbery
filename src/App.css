@@ -45,6 +45,7 @@ html {
   padding: 20px 0;
   border: solid 2px #fff;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  transition: all 0.5s ease-out;
   width: 100%;
 
   background-repeat: no-repeat;
@@ -66,6 +67,7 @@ html {
 #link-body button:hover {
   border: none;
   animation-play-state: running;
+  background-color: #6bafb2;
 }
 
 .social-icons {
@@ -73,6 +75,14 @@ html {
 
 .social-icons svg {
   color: #fff;
+  transition: all 0.5s ease-out;
+}
+
+.social-icons svg:hover {
+  background-color: #6bafb2;
+  padding: 5px;
+  border-radius: .25rem;
+  cursor: pointer;
 }
 
 .c-footer {
