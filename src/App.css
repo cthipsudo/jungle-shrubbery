@@ -68,6 +68,12 @@ html {
   animation-play-state: running;
 }
 
+.social-icons {
+}
+
+.social-icons svg {
+  color: #fff;
+}
 
 .c-footer {
   width: 100%;
