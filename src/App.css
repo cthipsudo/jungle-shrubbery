@@ -1,19 +1,30 @@
+html,
+body {
+  height: 100%;
+}
+
+body footer {
+  position: sticky;
+  top: 100vh;
+}
+
 html {
-  background-color: #78BBBF;
+  background-color: #78bbbf;
 }
 
 .app {
   height: auto;
   width: 100%;
-  background-color: #78BBBF;
+  background-color: #78bbbf;
 }
 
 .app-wrapper {
   width: 100%;
+  background-color: #78bbbf;
 }
 
 #profile {
-  background: url('./images/banner-edit.png');
+  background: url("./images/banner-edit.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -30,15 +41,15 @@ html {
   border-top: solid #fff 2px;
   width: 100%;
   height: auto;
-  background-color: #78BBBF;
-  background-image: url('./images/transparent-flowers.png');
+  background-color: #78bbbf;
+  background-image: url("./images/transparent-flowers.png");
 }
 #link-body ul {
   width: 100%;
   height: auto;
 }
 #link-body ul li {
-  background-color: #78BBBF;
+  background-color: #78bbbf;
   width: 100%;
 }
 #link-body button {
@@ -48,24 +59,17 @@ html {
   width: 100%;
 
   background-repeat: no-repeat;
-  background-image:   linear-gradient(to right, #fff 100%, #fff 100%),
-                      linear-gradient(to bottom, #fff 100%, #fff 100%),
-                      linear-gradient(to right, #fff 100%, #fff 100%),
-                      linear-gradient(to bottom, #fff 100%, #fff 100%);
-  background-size:    100% 3px,
-                      3px 100%,
-                      100% 3px,
-                      3px 100%;
-  background-position:    0 0,
-                          100% 0,
-                          100% 100%,
-                          0 100%;
-  
+  background-image: linear-gradient(to right, #fff 100%, #fff 100%),
+    linear-gradient(to bottom, #fff 100%, #fff 100%),
+    linear-gradient(to right, #fff 100%, #fff 100%),
+    linear-gradient(to bottom, #fff 100%, #fff 100%);
+  background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
 }
 #link-body button:hover {
   border: none;
   animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
-  
+
   background-color: #6bafb2;
 }
 
@@ -80,7 +84,7 @@ html {
 .social-icons svg:hover {
   background-color: #6bafb2;
   padding: 5px;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   cursor: pointer;
 }
 
@@ -90,60 +94,46 @@ html {
   border-top: solid 2px #fff;
 }
 
-
-
-
 /* Media Queries */
 @media all and (min-width: 768px) {
   .app {
     height: 100vh;
+    background: rgb(113, 173, 176);
+    background: linear-gradient(
+      0deg,
+      rgba(113, 173, 176, 1) 0%,
+      rgba(120, 187, 191, 1) 100%
+    );
   }
   .app-wrapper {
     max-width: 768px;
     width: 100%;
     border: solid 2px #fff;
-    
+  }
+  #profile {
+    padding: 10px;
   }
   #profile img {
     max-width: 15rem;
   }
 }
 
-
-
-
-
 /* Animations */
 
 @keyframes bg {
   0% {
-      background-size:    0 3px,
-                          3px 0,
-                          0 3px,
-                          3px 0;
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
   }
   25% {
-      background-size:    100% 3px,
-                          3px 0,
-                          0 3px,
-                          3px 0;
+    background-size: 100% 3px, 3px 0, 0 3px, 3px 0;
   }
   50% {
-      background-size:    100% 3px,
-                          3px 100%,
-                          0 3px,
-                          3px 0;
+    background-size: 100% 3px, 3px 100%, 0 3px, 3px 0;
   }
   75% {
-      background-size:    100% 3px,
-                          3px 100%,
-                          100% 3px,
-                          3px 0;
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0;
   }
   100% {
-      background-size:    100% 3px,
-                          3px 100%,
-                          100% 3px,
-                          3px 100%;
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
   }
 }

@@ -4,7 +4,7 @@ import { faTwitch, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faCoffee, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 function SocialIcons({ Links }) {
   return (
-    <div className="social-icons flex justify-evenly gap-4 my-10 ">
+    <div className="social-icons flex justify-evenly gap-4 my-10 md:my-6 ">
       <a href={Links[0].link} target="_blank">
         <FontAwesomeIcon className="animate__animated animate__fadeInUp" icon={faTwitch} size="3x" />
       </a>
