@@ -12,8 +12,8 @@ function App() {
       <div className="app-wrapper">
         <Profile />
         <LinkBody />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,3 +1,7 @@
+html {
+  background-color: #78BBBF;
+}
+
 .app {
   height: auto;
   width: 100%;
@@ -64,6 +68,12 @@
   animation-play-state: running;
 }
 
+
+.c-footer {
+  width: 100%;
+  background-color: #6bafb2;
+  border-top: solid 2px #fff;
+}
 
 
 
