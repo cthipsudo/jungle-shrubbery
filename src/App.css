@@ -24,6 +24,7 @@ html {
 }
 
 #profile {
+  position: relative;
   background: url("./images/banner-edit.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,9 +33,16 @@ html {
 }
 
 #profile img {
+  position: relative;
   border-radius: 50%;
   max-width: 10rem;
   margin-bottom: 20px;
+  transition: top 0.5s ease;
+  top: 0;
+}
+
+#profile img:hover {
+  top: -10px;
 }
 
 #link-body {
@@ -55,7 +63,7 @@ html {
 #link-body button {
   padding: 20px 0;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease;
   width: 100%;
 
   background-repeat: no-repeat;
@@ -73,12 +81,9 @@ html {
   background-color: #6bafb2;
 }
 
-.social-icons {
-}
-
 .social-icons svg {
   color: #fff;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease;
 }
 
 .social-icons svg:hover {
@@ -109,6 +114,7 @@ html {
     max-width: 768px;
     width: 100%;
     border: solid 2px #fff;
+    border-radius: 0.25rem;
   }
   #profile {
     padding: 10px;
