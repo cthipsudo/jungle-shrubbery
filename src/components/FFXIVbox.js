@@ -1,6 +1,7 @@
 import React from "react";
 import { Component } from "react/cjs/react.production.min";
 import FFXIVServices from "../services/FFXIV-services";
+import Loader from "./Loader";
 
 class FFXIVbox extends Component {
   state = {
@@ -11,17 +12,16 @@ class FFXIVbox extends Component {
   componentDidMount() {
     const data = FFXIVServices.grabFFXIVChar();
     data.then((data) => {
-      //console.log(data);
       this.setState((prevState) => ({
         data: data,
         dataGrabbed: !prevState.dataGrabbed,
       }));
-      //console.log(this.state.data);
     });
   }
 
   render() {
-    if (!this.state.dataGrabbed) return null;
+    // Use a loader while api is grabbed...
+    if (!this.state.dataGrabbed) return <Loader />;
     const { Character } = this.state.data;
     console.log(Character);
 
