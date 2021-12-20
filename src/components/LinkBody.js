@@ -8,6 +8,7 @@ const LinkBody = () => {
   let links = Links.map((link, index) => {
     return <Link 
     key={index}
+    index={index}
     link={link.link} 
     text={link.text}>
     </Link>;

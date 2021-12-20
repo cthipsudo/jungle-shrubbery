@@ -22,7 +22,7 @@ html {
 
 #profile img {
   border-radius: 50%;
-  max-width: 15rem;
+  max-width: 10rem;
   margin-bottom: 20px;
 }
 
@@ -103,6 +103,9 @@ html {
     width: 100%;
     border: solid 2px #fff;
     
+  }
+  #profile img {
+    max-width: 15rem;
   }
 }
 
