@@ -116,10 +116,13 @@ html {
   #profile {
     padding: 10px;
     background-image: none;
+  }
+  #profile .hov-wrapper {
+    position: relative;
     transition: top 0.5s ease;
     top: 0;
   }
-  #profile:hover {
+  #profile .hov-wrapper:hover {
     top: -10px;
   }
   #profile img {
