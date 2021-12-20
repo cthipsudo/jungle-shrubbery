@@ -12,6 +12,10 @@ class FFXIVbox extends Component {
   componentDidMount() {
     const data = FFXIVServices.grabFFXIVChar();
     data.then((data) => {
+      const titleData = FFXIVServices.grabCharTitle(data.Character.Title);
+      titleData.then(data => {
+        console.log(data.Results[0]);
+      });
       this.setState((prevState) => ({
         data: data,
         dataGrabbed: !prevState.dataGrabbed,
@@ -21,13 +25,14 @@ class FFXIVbox extends Component {
 
   render() {
     // Use a loader while api is grabbed...
-    if (!this.state.dataGrabbed) return <Loader />;
+    if (!this.state.dataGrabbed) return <div className="flex flex-col items-center"><Loader /></div>;
     const { Character } = this.state.data;
     console.log(Character);
 
     return (
-      <div>
-        <img src={Character.Avatar} />
+      <div className="ffxiv-wrapper flex flex-col items-center">
+        <h2>{Character.Name}</h2>
+        <img src={Character.Portrait}/>
       </div>
     );
   }
