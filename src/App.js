@@ -4,6 +4,7 @@ import "./App.css";
 import Profile from "./components/Profile";
 import LinkBody from "./components/LinkBody";
 import Footer from "./components/Footer";
+import FFXIVbox from "./components/FFXIVbox";
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
     <div className="app flex flex-col justify-center items-center">
       <div className="app-wrapper">
         <Profile />
-        <LinkBody />
+        <LinkBody />  
+        <FFXIVbox />
       </div>
       <Footer />
     </div>
