@@ -16,7 +16,7 @@ const LinkBody = () => {
   return (
     <div id="link-body">
       <ul className="flex flex-col items-center gap-10 p-10">{links}</ul>
-      <SocialIcons />
+      <SocialIcons Links={Links}/>
     </div>
   );
 };
