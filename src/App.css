@@ -30,19 +30,14 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   padding: 10% 0;
+  
 }
 
 #profile img {
   position: relative;
   border-radius: 50%;
   max-width: 10rem;
-  margin-bottom: 20px;
-  transition: top 0.5s ease;
-  top: 0;
-}
-
-#profile img:hover {
-  top: -10px;
+  margin-bottom: 20px; 
 }
 
 #link-body {
@@ -118,6 +113,12 @@ html {
   }
   #profile {
     padding: 10px;
+    background-image: none;
+    transition: top 0.5s ease;
+    top: 0;
+  }
+  #profile:hover {
+    top: -10px;
   }
   #profile img {
     max-width: 15rem;
