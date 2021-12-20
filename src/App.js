@@ -3,6 +3,7 @@ import "./App.css";
 // Components
 import Profile from "./components/Profile";
 import LinkBody from "./components/LinkBody";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <div className="app-wrapper">
         <Profile />
         <LinkBody />
+        <Footer />
       </div>
     </div>
   );

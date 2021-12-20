@@ -70,11 +70,13 @@
 
 /* Media Queries */
 @media all and (min-width: 768px) {
+  .app {
+    height: 100vh;
+  }
   .app-wrapper {
     max-width: 768px;
     width: 100%;
     border: solid 2px #fff;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     
   }
 }
