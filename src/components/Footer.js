@@ -10,6 +10,7 @@ function Footer() {
         <a
           className="underline decoration-solid"
           href="https://twitter.com/narrator_oscar"
+          target='_blank'
         >
           cthipsudo
         </a>{" "}
