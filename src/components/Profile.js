@@ -10,6 +10,7 @@ const Profile = () => {
       <div className="hov-wrapper flex flex-col items-center">
         <img
           className=" animate__animated animate__fadeIn"
+          alt="jungie-avatar"
           onMouseOver={hoverImage}
           src={pfp}
         />

@@ -70,10 +70,10 @@ class FFXIVbox extends Component {
                 <h3 className="text-black uppercase font-bold">{className}</h3>
                 <h4>Level {Character.ActiveClassJob.Level}</h4>
               </div>
-              <img className="classIcon" src={classUrl} />
+              <img className="classIcon" src={classUrl} alt="ffxiv-class-icon" />
             </div>
           </div>
-          <img className="w-full my-2" src={Character.Portrait} />
+          <img className="w-full my-2" src={Character.Portrait} alt="ffxiv-character-portrait"/>
           <div className="flex items-center info-color-hover w-max">
             <FontAwesomeIcon className="" icon={faAngleDoubleRight} />
             <a
