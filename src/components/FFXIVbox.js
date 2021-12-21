@@ -52,7 +52,7 @@ class FFXIVbox extends Component {
     const { classUrl, className } = this.state;
 
     return (
-      <div id="ffxiv" className="ffxiv-wrapper flex flex-col items-center text-white text-left p-5 md:p-10 md:self-stretch md:justify-evenly">
+      <div id="ffxiv" className="ffxiv-wrapper flex flex-col items-center text-white text-left p-5 md:p-10 md:self-stretch md:justify-evenly animate__animated animate__zoomIn">
         <h2 className=" font-bold self-start text-2xl mb-2">My FFXIV Character</h2>
         <div className="border-wrapper w-full p-2 bg-white text-zinc-400">
           <div className="flex justify-between w-full items-center">

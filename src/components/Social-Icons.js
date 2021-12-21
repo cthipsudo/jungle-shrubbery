@@ -14,7 +14,7 @@ function SocialIcons({ Links }) {
       <a href={Links[2].link} target="_blank">
         <FontAwesomeIcon className="animate__animated animate__fadeInUp" icon={faPaintBrush} size="3x" />
       </a>
-      <a href={Links[3].link} target="_blank">
+      <a href={Links[4].link} target="_blank">
         <FontAwesomeIcon className="animate__animated animate__fadeInUp" icon={faCoffee} size="3x" />
       </a>
     </div>
