@@ -9,6 +9,7 @@ const LinkBody = () => {
     return <Link 
     key={index}
     index={index}
+    mobileOnly={link.mobileOnly}
     target={link.target}
     link={link.link} 
     text={link.text}>

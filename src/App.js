@@ -9,7 +9,7 @@ import FFXIVbox from "./components/FFXIVbox";
 function App() {
   return (
     <div className="app flex flex-col justify-center items-center">
-      <div className="layout-wrapper md:flex md:w-full md:justify-evenly">
+      <div className="layout-wrapper md:flex md:w-full md:justify-evenly md:items-center">
         <div className="app-wrapper">
           <Profile />
           <LinkBody />
