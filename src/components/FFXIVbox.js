@@ -63,12 +63,15 @@ class FFXIVbox extends Component {
           <div className="flex justify-between w-full items-center">
             <div className="flex flex-col">
               <h3 className="font-bold text-black">{Character.Name}</h3>
-              <h3 className="">
+              <h4 className="">
                 {Character.Server} ({Character.DC})
-              </h3>
+              </h4>
             </div>
             <div className="flex items-center gap-2">
-              <h3 className="text-black uppercase font-bold">{className}</h3>
+              <div>
+                <h3 className="text-black uppercase font-bold">{className}</h3>
+                <h4>Level {Character.ActiveClassJob.Level}</h4>
+              </div>
               <img className="classIcon" src={classUrl} />
             </div>
           </div>
