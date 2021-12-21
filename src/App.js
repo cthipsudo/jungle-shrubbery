@@ -13,8 +13,8 @@ function App() {
       <div className="app-wrapper">
         <Profile />
         <LinkBody />  
-        <FFXIVbox />
       </div>
+      <FFXIVbox />
       <Footer />
     </div>
   );

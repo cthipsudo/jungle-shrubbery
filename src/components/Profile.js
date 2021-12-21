@@ -14,7 +14,7 @@ const Profile = () => {
           onMouseOver={hoverImage}
           src={pfp}
         />
-        <h1 className="text-white text-xl font-bold animate__animated animate__fadeIn">
+        <h1 className="text-white text-3xl font-bold animate__animated animate__fadeIn">
           {" "}
           @jungie_boi{" "}
         </h1>
