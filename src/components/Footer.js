@@ -9,7 +9,7 @@ function Footer() {
         Developed By{" "}
         <a
           className="underline decoration-solid"
-          href="https://github.com/cthipsudo"
+          href="https://twitter.com/narrator_oscar"
         >
           cthipsudo
         </a>{" "}
