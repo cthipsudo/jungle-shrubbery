@@ -72,6 +72,7 @@ html {
 }
 #link-body button:hover {
   border: none;
+  color: #f8d7da;
   animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
   background-image: linear-gradient(to right, #f4b9bc 100%, #f4b9bc 100%),
     linear-gradient(to bottom, #f4b9bc 100%, #f4b9bc 100%),
@@ -112,6 +113,11 @@ html {
   width: 100%;
   background-color: #6bafb2;
   border-top: solid 2px #fff;
+}
+
+.c-footer a:hover {
+  color: #f4b9bc;
+  transition: ease 0.5s;
 }
 
 /* Media Queries */

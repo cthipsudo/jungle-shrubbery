@@ -1,18 +1,18 @@
 const Links = [
   {
-    text: "My Twitch",
+    text: "Check out my broadcasts!",
     link: "https://www.twitch.tv/jungie_boi",
     target: '_blank',
     mobileOnly : false
   },
   {
-    text: "Twitter",
+    text: "Follow me on Twitter!",
     link: "https://twitter.com/jungie_boi",
     target: '_blank',
     mobileOnly : false
   },
   {
-    text: "My Mama",
+    text: "Like my model? This is my mama.",
     link: "https://twitter.com/hyuewa",
     target: '_blank',
     mobileOnly : false
@@ -24,7 +24,7 @@ const Links = [
     mobileOnly : true
   },
   {
-    text: "Donate",
+    text: "Still have that stimulus? Feel free to donate!",
     link: "https://streamelements.com/jungie_boi/tip",
     target: '_blank',
     mobileOnly : false
