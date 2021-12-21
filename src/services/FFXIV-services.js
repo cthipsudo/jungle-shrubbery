@@ -31,7 +31,6 @@ const initChar = () => {
   let outData = {};
   const rawData = grabFFXIVChar();
   rawData.then((data) => {
-    //console.log(data);
     //const titleData = grabCharTitle(data.Character.Title);
     outData = data;
   });

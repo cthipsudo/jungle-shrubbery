@@ -27,13 +27,11 @@ class FFXIVbox extends Component {
         data.Character.ActiveClassJob.JobID
       );
       jobIcon.then((data) => {
-        console.log(data);
         let endpoint = data.Results[0].Icon.replace("/1/", "/companion/");
         this.setState({
           classUrl: `https://xivapi.com/${endpoint}`,
         });
       });
-      console.log(jobIcon);
       this.setState((prevState) => ({
         data: data,
         className: data.Character.ActiveClassJob.UnlockedState.Name,

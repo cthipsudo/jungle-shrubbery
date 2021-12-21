@@ -3,7 +3,6 @@ import pfp from "../images/shiroi-white-trim.png";
 
 const Profile = () => {
   function hoverImage(e) {
-    //console.log(e.target);
     const el = e.target;
   }
   return (
