@@ -7,14 +7,15 @@ import Footer from "./components/Footer";
 import FFXIVbox from "./components/FFXIVbox";
 
 function App() {
-
   return (
     <div className="app flex flex-col justify-center items-center">
-      <div className="app-wrapper">
-        <Profile />
-        <LinkBody />  
+      <div className="layout-wrapper md:flex md:w-full md:justify-evenly">
+        <div className="app-wrapper">
+          <Profile />
+          <LinkBody />
+        </div>
+        <FFXIVbox />
       </div>
-      <FFXIVbox />
       <Footer />
     </div>
   );
