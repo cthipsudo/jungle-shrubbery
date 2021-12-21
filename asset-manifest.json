@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jungle-shrubbery/static/css/main.164a6d0a.css",
-    "main.js": "/jungle-shrubbery/static/js/main.6bd8b68f.js",
-    "static/media/shiroi-white-trim.png": "/jungle-shrubbery/static/media/shiroi-white-trim.6f10fb3025ad7754b76b.png",
-    "static/media/banner-edit.png": "/jungle-shrubbery/static/media/banner-edit.9485747e7d35056de825.png",
-    "index.html": "/jungle-shrubbery/index.html",
-    "main.164a6d0a.css.map": "/jungle-shrubbery/static/css/main.164a6d0a.css.map",
-    "main.6bd8b68f.js.map": "/jungle-shrubbery/static/js/main.6bd8b68f.js.map"
+    "main.css": "/static/css/main.71ec2791.css",
+    "main.js": "/static/js/main.7b4505ef.js",
+    "static/media/shiroi-white-trim.png": "/static/media/shiroi-white-trim.6f10fb3025ad7754b76b.png",
+    "static/media/banner-edit.png": "/static/media/banner-edit.9485747e7d35056de825.png",
+    "index.html": "/index.html",
+    "main.71ec2791.css.map": "/static/css/main.71ec2791.css.map",
+    "main.7b4505ef.js.map": "/static/js/main.7b4505ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.164a6d0a.css",
-    "static/js/main.6bd8b68f.js"
+    "static/css/main.71ec2791.css",
+    "static/js/main.7b4505ef.js"
   ]
 }
