@@ -6,11 +6,17 @@ import LinkBody from "./components/LinkBody";
 import Footer from "./components/Footer";
 import FFXIVbox from "./components/FFXIVbox";
 
+
+
 function App() {
+  // initMobileQuery(width, el);
+  //width.addEventListener(initMobileQuery);
+  let width = window.matchMedia("(min-width: 768px)");
+  const loadAnim = (width.matches) ? 'animate__animated animate__zoomIn':'';
   return (
     <div className="app flex flex-col justify-center items-center">
       <div className="layout-wrapper md:flex md:w-full md:justify-evenly md:items-center">
-        <div className="app-wrapper md:self-stretch animate__animated animate__zoomIn">
+        <div className={`app-wrapper md:self-stretch ${loadAnim}`}>
           <Profile />
           <LinkBody />
         </div>

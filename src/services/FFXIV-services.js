@@ -27,16 +27,6 @@ const grabCharJobIcon = (id) => {
   );
 };
 
-const initChar = () => {
-  let outData = {};
-  const rawData = grabFFXIVChar();
-  rawData.then((data) => {
-    //const titleData = grabCharTitle(data.Character.Title);
-    outData = data;
-  });
-  return outData;
-};
-
 export default {
   grabFFXIVChar,
   grabCharTitle,
