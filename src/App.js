@@ -5,7 +5,7 @@ import Profile from "./components/Profile";
 import LinkBody from "./components/LinkBody";
 import Footer from "./components/Footer";
 import FFXIVbox from "./components/FFXIVbox";
-
+import ConsoleGreeting from "./components/ConsoleGreeting";
 
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
         <FFXIVbox />
       </div>
       <Footer />
+      <ConsoleGreeting />
     </div>
   );
 }
