@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.f166eece.css",
-    "main.js": "/static/js/main.794dd06d.js",
+    "main.js": "/static/js/main.652440ab.js",
     "static/media/shiroi-white-trim.png": "/static/media/shiroi-white-trim.6f10fb3025ad7754b76b.png",
     "static/media/banner-edit.png": "/static/media/banner-edit.9485747e7d35056de825.png",
     "index.html": "/index.html",
     "main.f166eece.css.map": "/static/css/main.f166eece.css.map",
-    "main.794dd06d.js.map": "/static/js/main.794dd06d.js.map"
+    "main.652440ab.js.map": "/static/js/main.652440ab.js.map"
   },
   "entrypoints": [
     "static/css/main.f166eece.css",
-    "static/js/main.794dd06d.js"
+    "static/js/main.652440ab.js"
   ]
 }
