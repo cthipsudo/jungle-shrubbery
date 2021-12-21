@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import { Component } from "react/cjs/react.production.min";
 import FFXIVServices from "../services/FFXIV-services";
 import Loader from "./Loader";
@@ -52,7 +54,10 @@ class FFXIVbox extends Component {
     const { classUrl, className } = this.state;
 
     return (
-      <div id="ffxiv" className="ffxiv-wrapper flex flex-col items-center text-white text-left p-5 md:p-10 md:self-stretch md:justify-evenly animate__animated animate__zoomIn">
+      <div
+        id="ffxiv"
+        className="ffxiv-wrapper flex flex-col items-center text-white text-left p-5 md:p-10 md:self-stretch md:justify-evenly animate__animated animate__zoomIn"
+      >
         <h2 className=" font-bold self-start text-2xl mb-2">My Better Half</h2>
         <div className="border-wrapper w-full p-2 bg-white text-zinc-400">
           <div className="flex justify-between w-full items-center">
@@ -67,7 +72,16 @@ class FFXIVbox extends Component {
               <img className="classIcon" src={classUrl} />
             </div>
           </div>
-          <img className="w-full mt-2" src={Character.Portrait} />
+          <img className="w-full my-2" src={Character.Portrait} />
+          <div className="flex items-center info-color-hover w-max">
+            <FontAwesomeIcon className="" icon={faAngleDoubleRight} />
+            <a
+              target="_blank"
+              href="https://na.finalfantasyxiv.com/lodestone/character/30983517/"
+            >
+              <h3 className="info-check">Need more info?</h3>
+            </a>
+          </div>
         </div>
       </div>
     );

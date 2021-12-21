@@ -109,6 +109,25 @@ html {
   max-height: 50px;
 }
 
+.ffxiv-wrapper .info-check{
+  padding-left: 8px;
+  transition: 0.5s ease;
+}
+
+.ffxiv-wrapper .info-check:hover {
+  padding-left: 1px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #f4b9bc;
+}
+.ffxiv-wrapper .info-color-hover {
+  margin-left: auto;
+  margin-right: 0;
+}
+.ffxiv-wrapper .info-color-hover:hover {
+  color: #f4b9bc;
+}
+
 .c-footer {
   width: 100%;
   background-color: #6bafb2;
