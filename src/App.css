@@ -94,6 +94,8 @@ html {
 
 .ffxiv-wrapper {
   border-radius: 0.25rem;
+  background-color: #78bbbf;
+  background-position: right;
 }
 
 .ffxiv-wrapper .border-wrapper {
@@ -132,6 +134,11 @@ html {
     border: solid 2px #fff;
     border-radius: 0.25rem;
   }
+  .layout-wrapper {
+    height: 100%;
+    background-image: url("./images/transparent-flowers.png");
+    padding-top: 25px;
+  }
   .link-mobile{
     display: none;
   }
@@ -149,7 +156,10 @@ html {
   #profile img {
     max-width: 15rem;
   }
-  footer, #root {
+  #link-body {
+    background-image: none;
+  }
+  footer {
     margin-top: 25px;
   }
 }

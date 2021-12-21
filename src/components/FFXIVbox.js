@@ -63,7 +63,7 @@ class FFXIVbox extends Component {
               </h3>
             </div>
             <div className="flex items-center gap-2">
-              <h3 className="font-serif text-black uppercase font-bold">{className}</h3>
+              <h3 className="text-black uppercase font-bold">{className}</h3>
               <img className="classIcon" src={classUrl} />
             </div>
           </div>

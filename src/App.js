@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app flex flex-col justify-center items-center">
       <div className="layout-wrapper md:flex md:w-full md:justify-evenly md:items-center">
-        <div className="app-wrapper">
+        <div className="app-wrapper md:self-stretch">
           <Profile />
           <LinkBody />
         </div>
