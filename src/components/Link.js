@@ -1,11 +1,10 @@
-import React, {useRef, useLayoutEffect} from "react";
+import React from "react";
 
 function Link({ link, text, target, mobileOnly }) {
-  let c_class = (mobileOnly) ? 'link-mobile' : '';
-  const refRef = useRef(null);
-  
+  let c_class = mobileOnly ? "link-mobile" : "";
+
   return (
-    <li ref={refRef} className={`text-white animate__animated animate__zoomIn ${c_class}`}>
+    <li className={`text-white ${c_class} animate__animated animate__zoomIn`}>
       <a target={target} href={link}>
         <button className="font-bold font-sans">{text}</button>
       </a>
