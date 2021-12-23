@@ -18,7 +18,6 @@ function SocialIcons({ Links }) {
     const onScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight;
       if (topPosition < scrollPosition) {
-        console.log('I fire');
         setAClass(loadAnim);
       }
     };
