@@ -162,7 +162,8 @@ html {
   .layout-wrapper {
     height: 100%;
     background-image: url("./images/transparent-flowers.png");
-    padding-top: 25px;
+    padding-top: 25px;    
+    margin-top: 25px;
   }
   .link-mobile{
     display: none;
