@@ -40,6 +40,9 @@ function FFXIVbox() {
     return (
       <div className="flex flex-col items-center">
         <Loader />
+        <div className="text-white text-center pt-20 text-2xl">
+          (if this is taking too long), <br/> FFXIV probably disabled the request for a bit, <br/>check back in an hour!
+        </div>
       </div>
     );
 
