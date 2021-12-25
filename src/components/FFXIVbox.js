@@ -8,32 +8,32 @@ function FFXIVbox() {
   const [data, setData] = useState({});
   const [dataGrabbed, setDataGrabbed] = useState(false);
   const [character, setCharacter] = useState({});
-  const [title, setTitle] = useState('');
-  const [className, setClassName] = useState('');
-  const [classUrl, setClassUrl] = useState('');
-  
+  const [title, setTitle] = useState("");
+  const [className, setClassName] = useState("");
+  const [classUrl, setClassUrl] = useState("");
+
+  let apiCall = false;
   // Grab API
   useEffect(() => {
-    let apiCall = false;
-    if(!apiCall){
-      FFXIVServices.grabFFXIVChar().then(data => {
-        if(!apiCall) {
-          setData(data);
-          setCharacter(data.Character);
-          setClassName(data.Character.ActiveClassJob.UnlockedState.Name);
-          FFXIVServices.grabCharTitle(data.Character.Title).then(data => {
-            setTitle(data.Name);
-          })
-          FFXIVServices.grabCharJobIcon(data.Character.ActiveClassJob.JobID).then(data => {
+    if (!apiCall) {
+      FFXIVServices.grabFFXIVChar().then((data) => {
+        setData(data);
+        setCharacter(data.Character);
+        setClassName(data.Character.ActiveClassJob.UnlockedState.Name);
+        FFXIVServices.grabCharTitle(data.Character.Title).then((data) => {
+          setTitle(data.Name);
+        });
+        FFXIVServices.grabCharJobIcon(data.Character.ActiveClassJob.JobID).then(
+          (data) => {
             let endpoint = data.Results[0].Icon.replace("/1/", "/companion/");
             setClassUrl(`https://xivapi.com/${endpoint}`);
-          });
-          setDataGrabbed(true);
-        }
-      })
+          }
+        );
+        setDataGrabbed(true);
+      });
     }
-    return () => apiCall = true;
-  });
+    return () => (apiCall = true);
+  }, []);
 
   // Use a loader while api is grabbed...
   if (!dataGrabbed)
@@ -41,7 +41,9 @@ function FFXIVbox() {
       <div className="flex flex-col items-center">
         <Loader />
         <div className="text-white text-center pt-20 text-2xl">
-          (if this is taking too long), <br/> FFXIV probably disabled the request for a bit, <br/>check back in an hour!
+          (if this is taking too long), <br /> FFXIV probably disabled the
+          request for a bit, <br />
+          check back in an hour!
         </div>
       </div>
     );
