@@ -142,7 +142,7 @@ html {
 /* Media Queries */
 @media all and (min-width: 768px) {
   .app {
-    height: 100%;
+    height: auto;
     background: rgb(113, 173, 176);
     background: linear-gradient(
       0deg,
